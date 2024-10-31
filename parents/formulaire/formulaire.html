@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Les bases en css</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="formulaire.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <form action="" method="post" id="form">
+        <div class="field">
+            <div class="bg">
+                <h1>Contact US</h1> <br>
+                <span>Fill out the form below to learn more!</span>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="namefirst">First Name</label>
+                    <input type="text" name="namefirst" id="namefirst" value="John">
+                </div>
+                <div class="col">
+                    <label for="namelast">Last Name</label>
+                    <input type="text" name="namelast" id="namelast" value="Smith">
+                </div>
+            </div>
+            <div class="col">
+                <label for="mail">Email <span style="color: red;">*</span></label>
+                <input type="email" name="mail" id="mail" value="john.smith@gmail.com">
+            </div>
+            <hr class="top">
+            <div class="col">
+                <label for="comment">Comments</label>
+                <textarea name="comment" id="comment" rows="5" cols="54"></textarea>
+            </div>
+            <div class="row-1">
+                <button type="submit">Submit</button>
+                <p>or press enter</p>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

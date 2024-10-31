@@ -1,0 +1,458 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mon Parcours</title>
+    <meta charset="utf-8">
+</head>
+
+<body id="body">
+    <h1>Presentation</h1>
+    <img src="images/photo1.png" alt="moi">
+    <p>
+        Salut, je me nomme Papa Yaffa, suis à
+        l'Université Numérique Cheikh Hamidou Kane(UNCHK) en developpement web mobile.
+        <br><br>
+        Diplômes
+    <ul>
+        <li>CFEE</li>
+        <li>BFEM</li>
+        <li>BAC</li>
+    </ul>
+
+    Langues
+    <ol>
+        <li>Français</li>
+        <li>Wolof</li>
+    </ol>
+    </p>
+    <h2>C'est quoi html ?</h2>
+    <img src="data:image/png;base64,
+                iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAA8FBMVEX////
+                kTSbxZSnr6+sAAADkSR/pc1nrWSjCwsLr8PDkRBXr7e739/
+                fwXRboppn4u6b3rpbxYiTq0czzekzkPwO3t7fU1NTf399ZWVnwVwDnmYr97
+                enlZEadnZ13d3flak0hISE1NTXjQQ1iYmJ/
+                f38qKiroVCcSEhLuXyjwWw/419D1xbzwp5n+9/
+                Xysqb0vrT75eDtk4FISEhfX1/lVDHshW/
+                pxsD1l3jr4N3me2T6z8D2pov5xbPsjHj75uKMjIyqqqrqURX0im
+                Tycz7lXTvosaf0knDq2NXscUzyd0f83dHzgVj0u7DqSwD4tJ3py8VRVp
+                fTAAALeElEQVR4nO2da1vaWBeGgxqU4Amb2lGY4qTTAyIKLZ4PnXqo76jvz
+                P//N5MQINmw1yKLPDumXDyf2lw28e6GnZu19g6WJcvbpUF+Gx7bGx57p/
+                zEeP4Mfjz668f4md9Hx7eDv/82/Otb4e+YLlDCpe/
+                Ribdjh2eIsPcPwnycUcKvg3P8Hj86S4SD376sHJwpwqXwFN9mmLB3aEU9N
+                luEvX+zpx6aMUJ/svk+cig3hKv9JCd8ryFcers4eiQnhEufB4kOBYSr
+                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"
+        alt="htmlimage">
+    <p>
+        HTML : HyperText Markup Langage.
+        C'est un langage de balisage qui sert à marquer les différents contenus pour
+        indiquer au navigateur que "ceci est un paragraphe, un titre, un image, etc."
+    </p>
+    <p>
+    <ol>
+        <li>Tavail en local</li>
+        <li>Tavail en ligne</li>
+        <li>Les élèments, Les balises et attibuts</li>
+        <li>Structure d'une page html</li>
+        <li>Création d'une page web</li>
+        <li>Indentation et commentaires</li>
+        <li>Les paragraphes et Les titres</li>
+        <li>Espaces et retour à la ligne</li>
+        <li>Gerer l'importance des textes</li>
+        <li>Les listes en html
+            <ul>
+                <li>Listes ordonnées</li>
+                <li>Listes non ordonnées</li>
+                <li>Imbriquation des listes</li>
+            </ul>
+        </li>
+    </ol>
+    </p>
+    <h3>Mes réalisations</h3>
+    <a href="index.html">Page 1</a>
+    <a href="#body">Haut</a>
+    <a href="parents/parent.html">Page parent</a>
+    <a href="parents/milieu/milieu.html">Page milieu</a>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Les bases en css</title>
+    <meta charset="utf-8">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Open Sans", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+        }
+
+        /* Section-flex */
+
+        .info-section {
+            text-align: center;
+            font-size: 40px;
+            margin-top: 50px;
+            margin-bottom: 100px;
+            color: white;
+        }
+
+        .section-flex {
+            margin-bottom: 200px;
+        }
+
+        /* Navigation */
+
+        .flex-nav {
+            background-color: #fff;
+            height: 70px;
+        }
+
+        .flex-nav img {
+            width: 60px;
+        }
+
+        .flex-nav ul {
+            display: flex;
+            list-style-type: none;
+            align-items: center;
+        }
+
+        .flex-nav ul li {
+            font-size: 25px;
+            margin: 0 10px;
+        }
+
+        /* nav-1 */
+
+        .nav-1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-1 img {
+            margin-left: 50px;
+        }
+
+        /* nav-2 */
+
+        .nav-2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 100px 0;
+        }
+
+        /* nav-3 */
+
+        .nav-3 {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            margin: 100px 0;
+        }
+
+        /* Section-flex */
+
+        .galerie {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 25px;
+            width: 80%;
+            max-width: 1300px;
+            margin: 70px auto 0;
+        }
+
+        .item {
+            width: 30%;
+            height: 200px;
+            margin: 10px;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .item img {
+            width: 100%;
+            height: auto;
+        }
+
+
+        .container-centre {
+            width: 300px;
+            height: 300px;
+            background-color: rgb(49, 156, 206);
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bloc-jaune {
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+        }
+
+        .btn-flex {
+            min-width: 200px;
+            display: flex;
+            margin: 0 auto;
+            align-items: center;
+            border: none;
+            border-radius: 5px;
+            color: #222;
+            padding: 0 0;
+        }
+
+        .icons-btn {
+            min-width: 50px;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            padding-left: 11px;
+            background-color: rgb(90, 90, 216);
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+        .icons-btn {
+            font-size: 65px;
+            width: 25px;
+            height: 100%;
+            padding-bottom: 0;
+            font-weight: bold;
+        }
+
+        .text-btn {
+            height: 100%;
+            display: inline-flex;
+            align-items: center;
+            min-width: 150px;
+            padding-left: 12px;
+            font-size: 22px;
+        }
+
+        .container-flex {
+            padding: 25px;
+            display: flex;
+            background-color: bisque;
+            width: 50%;
+            margin: 100px auto;
+        }
+
+        /* Container A */
+
+        .item-flex {
+            background-color: red;
+            width: 150px;
+            height: 150px;
+            margin: 5px;
+        }
+
+        .a1,
+        .a3 {
+            flex-grow: 0;
+        }
+
+        .a2 {
+            flex-grow: 1;
+        }
+
+        /* Container B */
+
+        .containerB {
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .b1,
+        .b2,
+        .b4,
+        .b5 {
+            flex-basis: 48%;
+        }
+
+        .b3 {
+            flex-basis: 100%;
+        }
+
+        /* Container C */
+
+        .containerC {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .containerC .item-flex {
+            width: 50%;
+            height: 60px;
+        }
+
+        /* Container C */
+
+        .containerD {
+            height: 750px;
+            width: 1000px;
+        }
+
+        .containerD .item-flex {
+            width: 250px;
+            height: 250px;
+        }
+
+        .d1 {
+            margin-left: auto;
+        }
+
+        .d2 {
+            margin: auto;
+        }
+
+        .d3 {
+            align-self: flex-end;
+        }
+
+        h1 {
+            color: #fff;
+            text-align: center;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="flex">
+        <div class="section-flex">
+            <p class="info-section">Navigation</p>
+            <!-- Nav 1 -->
+            <nav class="flex-nav nav-1">
+                <img src="images/photo1.png" alt="image">
+                <ul>
+                    <li>Acceuil</li>
+                    <li>Forum</li>
+                    <li>Blog</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="section-flex">
+            <nav class="flex-nav nav-2">
+                <img src="images/photo1.png" alt="image">
+                <ul>
+                    <li>Acceuil</li>
+                    <li>Forum</li>
+                    <li>Blog</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="section-flex">
+            <nav class="flex-nav nav-3">
+                <img src="images/photo1.png" alt="image">
+                <ul>
+                    <li>Acceuil</li>
+                    <li>Forum</li>
+                    <li>Blog</li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <section class="flex">
+        <section class="section-flex">
+            <p class="info-section">Galerie responsive</p>
+            <div class="galerie">
+                <div class="item">
+                    <img src="images/CoursCapture/cour (1).png" alt="CoursCapture">
+                </div>
+                <div class="item">
+                    <img src="images/CoursCapture/cour (2).png" alt="CoursCapture">
+                </div>
+                <div class="item">
+                    <img src="images/CoursCapture/cour (3).png" alt="CoursCapture">
+                </div>
+                <div class="item">
+                    <img src="images/CoursCapture/cour (4).png" alt="CoursCapture">
+                </div>
+                <div class="item">
+                    <img src="images/CoursCapture/cour (5).png" alt="CoursCapture">
+                </div>
+                <div class="item">
+                    <img src="images/CoursCapture/cour (6).png" alt="CoursCapture">
+                </div>
+                <div class="item">
+                    <img src="images/CoursCapture/cour (7).png" alt="CoursCapture">
+                </div>
+                <div class="item">
+                    <img src="images/CoursCapture/cour (8).png" alt="CoursCapture">
+                </div>
+                <div class="item">
+                    <img src="images/CoursCapture/cour (9).png" alt="CoursCapture">
+                </div>
+            </div>
+        </section>
+        <section class="section-flex">
+            <p class="info-section">Centrer sur X & Y</p>
+            <div class="container-centre">
+                <div class="bloc-jaune"></div>
+            </div>
+        </section>
+        <section class="section-flex">
+            <p class="info-section">Button</p>
+            <button class="btn-flex">
+                <span class="icons-btn">
+                    +
+                </span>
+                <p class="text-btn">Add more</p>
+            </button>
+        </section>
+    </section>
+    <section class="section-flex">
+        <p class="info-section">Exemple de disposition</p>
+        <h1>Utilisation de flex-grow</h1>
+        <div class="container-flex containerA">
+            <div class="item-flex a1"></div>
+            <div class="item-flex a2"></div>
+            <div class="item-flex a3"></div>
+        </div>
+
+        <h1>Utilisation de flex-basis</h1>
+
+        <div class="container-flex containerB">
+            <div class="item-flex b1"></div>
+            <div class="item-flex b2"></div>
+            <div class="item-flex b3"></div>
+            <div class="item-flex b4"></div>
+            <div class="item-flex b5"></div>
+        </div>
+
+        <h1>Utilisation de flex-direction</h1>
+
+        <div class="container-flex containerC">
+            <div class="item-flex c1"></div>
+            <div class="item-flex c2"></div>
+            <div class="item-flex c3"></div>
+            <div class="item-flex c4"></div>
+            <div class="item-flex c5"></div>
+            <div class="item-flex c6"></div>
+        </div>
+
+        <h1>Utilisation de align-self</h1>
+
+        <div class="container-flex containerD">
+            <div class="item-flex d1"></div>
+            <div class="item-flex d2"></div>
+            <div class="item-flex d3"></div>
+        </div>
+    </section>
+</body>
+
+</html>

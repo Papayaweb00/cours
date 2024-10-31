@@ -1,0 +1,25 @@
+h1 {
+    text-align: center;
+}
+
+.span-para {
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+table,
+tr,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+.back-col {
+    background-color: aqua;
+}
+
+img {
+    width: 300px;
+    height: 200px;
+}
